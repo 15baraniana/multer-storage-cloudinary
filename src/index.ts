@@ -12,7 +12,7 @@ type KnownKeys<T> = {
   ? U
   : never;
 
-type File = Express.Multer.File;
+type File = Express.Multer.File & { info: any };
 type PickedUploadApiOptions = Pick<
   UploadApiOptions,
   KnownKeys<UploadApiOptions>
