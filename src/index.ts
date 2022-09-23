@@ -84,6 +84,7 @@ export class CloudinaryStorage implements StorageEngine {
         path: resp.secure_url,
         size: resp.bytes,
         filename: resp.public_id,
+        info: resp.info,
       });
     } catch (err) {
       callback(err);
